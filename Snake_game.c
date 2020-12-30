@@ -319,7 +319,6 @@ void tail_remove()
 }
 ///////////////////////////////////////////////////////////////////////////////
 /// GAME OVER
-//  Zavrsni ekran u slucaju kraja igre
 void Game_over()
 {
     printf("\a");   //  "Beep" obavestenje
