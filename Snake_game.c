@@ -332,6 +332,7 @@ void Game_over()
         system("pause");
         f = fopen("./SnakeGame_HighestOfScores.txt", "w");
         fprintf(f, "%d", score);
+        fprintf(f, "\nYour high score is %d!", score);
         fclose(f);
         //printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         system("Cls");
@@ -340,7 +341,8 @@ void Game_over()
     printf("\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("\t\t\t!!!!!!!!!!!GAME OVER!!!!!!!!!!!\n\n");
     printf("\n\t\t\tWELL DONE! YOU SCORED %d POINTS!\n\n", score);
-    printf("\t\t\tPres ENTER to play again or ESC to exit...\n" );
+    printf("\t\t\t\tPres ESC to exit...\n" );
+    //printf("\t\t\tPres ENTER to play again or ESC to exit...\n" );
     printf("\n\n\n\n\n\n\n\n\n\n\n\n");
 
     //  Dajemo opciju ENTER = 13 ili ESC = 27
